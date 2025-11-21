@@ -2,3 +2,6 @@
 stack.env
 dockge/data/
 linkwarden/data/
+linkwarden/pgdata/
+freshrss/data/
+nginx/data/
