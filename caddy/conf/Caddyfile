@@ -1,0 +1,35 @@
+:80, :443 {
+    # Redirects
+    @dashy path_regexp dashy ^/(dashy|home)
+    redir @dashy http://olympus:8080 301
+
+    @cockpit path_regexp cockpit ^/(cockpit|dashboard)
+    redir @cockpit https://olympus:9090 301
+
+    @music path_regexp music ^/(music|navidrome)
+    redir @music http://olympus:4533 301
+
+    @jellyfin path_regexp jellyfin ^/(jellyfin|media)
+    redir @jellyfin http://olympus:8096 301
+
+    @immich path_regexp immich ^/(immich|image)
+    redir @immich http://olympus:2283 301
+
+    @linkwarden path_regexp linkwarden ^/(linkwarden|lw)
+    redir @linkwarden http://olympus:3210 301
+
+    @docker path_regexp docker ^/(dockge|docker)
+    redir @docker http://atlas:5001 301
+
+    @book path_regexp book ^/(book|audiobook)
+    redir @book http://olympus:13378 301
+
+    @rss path_regexp rss ^/(rss|freshrss)
+    redir @rss http://olympus:49999 301
+
+    @full path /full
+    redir @full http://olympus:50000 301
+
+    # Default root redirect
+    redir / http://olympus:8080 301
+}
