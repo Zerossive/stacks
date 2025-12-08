@@ -3,7 +3,7 @@ services:
         image: lissy93/dashy
         container_name: dashy
         volumes:
-            - /home/danny/data/dashy/conf.yml:/app/user-data/conf.yml
+            - ./conf.yml:/app/user-data/conf.yml
         ports:
             - 8080:8080
         environment:
