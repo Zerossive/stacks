@@ -45,14 +45,6 @@ sections:
         statusCheckUrl: http://192.168.1.89:5001
         statusCheckAllowInsecure: true
         id: 0_373_dockge
-      - title: Portainer
-        description: Docker Manager
-        icon: fab fa-docker
-        url: https://atlas:9443
-        statusCheck: true
-        statusCheckUrl: https://192.168.1.89:9443
-        statusCheckAllowInsecure: true
-        id: 1_373_portainer
       - title: Feishin Remote
         description: Remote Control Server
         icon: fas fa-music
@@ -60,7 +52,7 @@ sections:
         statusCheck: true
         statusCheckUrl: http://192.168.1.89:4333
         statusCheckAcceptCodes: '''401,402,403,418'''
-        id: 2_373_feishinremote
+        id: 1_373_feishinremote
   - name: OLYMPUS
     icon: fal fa-server
     items:
@@ -100,34 +92,27 @@ sections:
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:3210
         id: 4_569_linkwarden
-      - title: Mealie
-        description: Food Recipe Book
-        icon: fas fa-utensils
-        url: http://olympus:9925
-        statusCheck: true
-        statusCheckUrl: http://192.168.1.231:9925
-        id: 5_569_mealie
       - title: Audiobookshelf
         description: eBooks and Audiobooks
         icon: fas fa-book
         url: http://olympus:13378
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:13378
-        id: 6_569_audiobookshelf
+        id: 5_569_audiobookshelf
       - title: FreshRSS
         description: RSS Reader
         icon: fas fa-rss
         url: http://olympus:49999
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:49999
-        id: 7_569_freshrss
+        id: 6_569_freshrss
       - title: Full-Text RSS
         description: RSS Extractor
         icon: fas fa-rss
         url: http://olympus:50000
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:50000
-        id: 8_569_fulltextrss
+        id: 7_569_fulltextrss
       - title: Pi-hole
         description: Ad blocker
         icon: fas fa-ad
@@ -136,7 +121,7 @@ sections:
         statusCheckUrl: https://192.168.1.231/admin
         statusCheckAllowInsecure: true
         statusCheckAcceptCodes: ''
-        id: 9_569_pihole
+        id: 8_569_pihole
   - name: WEBSITES
     icon: fal fa-link
     items:
