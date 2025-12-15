@@ -13,9 +13,10 @@ services:
       - /home/danny/media/audiobookshelf/metadata:/metadata
     environment:
       - TZ=America/Chicago
-      - ALLOW_FRAME=1
+      - ALLOW_IFRAME=1
+      - ALLOW_CORS=1
   abs-tract:
-      container_name: abs-tract
+      container_name: audiobookshelf_abs-tract
       ports:
          - 5555:5555
       restart: unless-stopped
