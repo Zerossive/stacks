@@ -6,3 +6,6 @@ linkwarden/pgdata/
 freshrss/data/
 nginx/data/
 pihole/etc-pihole/
+ntfy/data/
+paperless-ngx/consume/
+paperless-ngx/export/
