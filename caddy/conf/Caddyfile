@@ -1,34 +1,40 @@
 :80, :443 {
     # Redirects
-    @dashy path_regexp dashy ^/(dashy|home)
+    @dashy path_regexp ^/(dashy|home)
     redir @dashy http://olympus:8080 301
 
-    @cockpit path_regexp cockpit ^/(cockpit|dashboard)
+    @cockpit path_regexp ^/(cockpit|dashboard)
     redir @cockpit https://olympus:9090 301
 
-    @music path_regexp music ^/(music|navidrome)
+    @music path_regexp ^/(music|navidrome)
     redir @music http://olympus:4533 301
 
-    @jellyfin path_regexp jellyfin ^/(jellyfin|media)
+    @jellyfin path_regexp ^/(jellyfin|media)
     redir @jellyfin http://olympus:8096 301
 
-    @immich path_regexp immich ^/(immich|image)
+    @immich path_regexp ^/(immich|image)
     redir @immich http://olympus:2283 301
 
-    @linkwarden path_regexp linkwarden ^/(linkwarden|lw)
+    @linkwarden path_regexp ^/(linkwarden|lw)
     redir @linkwarden http://olympus:3210 301
 
-    @docker path_regexp docker ^/(dockge|docker)
+    @docker path_regexp ^/(dockge|docker)
     redir @docker http://atlas:5001 301
 
-    @book path_regexp book ^/(book|audiobook)
+    @book path_regexp ^/(book|audiobook)
     redir @book http://olympus:13378 301
 
-    @rss path_regexp rss ^/(rss|freshrss)
+    @rss path_regexp ^/(rss|freshrss)
     redir @rss http://olympus:49999 301
 
     @full path /full
     redir @full http://olympus:50000 301
+
+    @paperless path_regexp ^/(paper|document)
+    redir @paperless http://olympus:8010 301
+
+    @ntfy path_regexp ^/(ntfy|notif)
+    redir @ntfy http://olympus:8234 301
 
     # Default root redirect
     redir / http://olympus:8080 301
