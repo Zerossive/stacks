@@ -122,6 +122,20 @@ sections:
         statusCheckAllowInsecure: true
         statusCheckAcceptCodes: ''
         id: 8_569_pihole
+      - title: Paperless-ngx
+        description: Document Library
+        icon: fas fa-leaf
+        url: http://olympus:8010
+        statusCheck: true
+        statusCheckUrl: http://192.168.1.231:8010
+        id: 9_569_paperlessngx
+      - title: ntfy
+        description: Notification Service
+        icon: fas fa-bell
+        url: http://olympus:8234/
+        statusCheck: true
+        statusCheckUrl: http://192.168.1.231:8234
+        id: 10_569_ntfy
   - name: WEBSITES
     icon: fal fa-link
     items:
