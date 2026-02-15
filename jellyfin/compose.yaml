@@ -12,8 +12,6 @@ services:
       - /home/danny/media/movies:/data/movies
       - /home/danny/media/shows:/data/shows
       - /home/danny/media/videos:/data/videos
-      - /home/danny/media/music:/data/music
-      - /home/danny/media/photos:/data/photos
     ports:
       - 8096:8096
       - 8920:8920 #optional
