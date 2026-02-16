@@ -9,10 +9,10 @@
     @music path_regexp ^/(music|navidrome)
     redir @music http://olympus:4533 301
 
-    @jellyfin path_regexp ^/(jellyfin|media)
+    @jellyfin path_regexp ^/(jellyfin|media|movie|video)
     redir @jellyfin http://olympus:8096 301
 
-    @immich path_regexp ^/(immich|image)
+    @immich path_regexp ^/(immich|image|img)
     redir @immich http://olympus:2283 301
 
     @linkwarden path_regexp ^/(linkwarden|lw)
@@ -30,7 +30,7 @@
     @full path /full
     redir @full http://olympus:50000 301
 
-    @paperless path_regexp ^/(paper|document)
+    @paperless path_regexp ^/(paper|document|docs)
     redir @paperless http://olympus:8010 301
 
     @ntfy path_regexp ^/(ntfy|notif)
