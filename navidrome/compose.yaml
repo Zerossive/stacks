@@ -12,13 +12,14 @@ services:
       - ND_DEFAULTTHEME=Catppuccin Macchiato
       - ND_LASTFM_APIKEY=${ND_LASTFM_APIKEY}
       - ND_LASTFM_SECRET=${ND_LASTFM_SECRET}
-      # AudioMuse-AI plugin:
+      # enable plugins:
       - ND_PLUGINS_ENABLED=true
       - ND_PLUGINS_AUTORELOAD=true
-      - ND_AGENTS=audiomouseai,lastfm,spotify,deezer
+      # AudioMuse-AI plugin:
+      - ND_AGENTS=audiomuseai,lastfm,spotify,deezer
       - ND_DEVARTISTINFOTIMETOLIVE=1s
-      # lyrics plugin
-      - ND_LYRICSPRIORITY=".lrc,.txt,embedded,nd-lyrics"
+      # add lyrics plugin (nd-lyrics):
+      - ND_LYRICSPRIORITY=".lrc,nd-lyrics,.txt,embedded"
     volumes:
       - /home/danny/media/navidrome:/data
       - /home/danny/media/music:/music:ro
