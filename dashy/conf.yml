@@ -64,55 +64,48 @@ sections:
         statusCheckUrl: https://192.168.1.231:9090
         statusCheckAllowInsecure: true
         id: 0_569_webconsole
-      - title: Navidrome
-        description: Music
-        icon: fas fa-music
-        url: http://olympus:4533
-        statusCheck: true
-        statusCheckUrl: http://192.168.1.231:4533
-        id: 1_569_navidrome
       - title: Jellyfin
         description: Media
         icon: fas fa-film
         url: http://olympus:8096
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:8096
-        id: 2_569_jellyfin
+        id: 1_569_jellyfin
       - title: Immich
         description: Photos
         icon: fas fa-image
         url: http://olympus:2283
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:2283
-        id: 3_569_immich
+        id: 2_569_immich
       - title: Linkwarden
         description: Bookmark Manager
         icon: fas fa-bookmark
         url: http://olympus:3210
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:3210
-        id: 4_569_linkwarden
+        id: 3_569_linkwarden
       - title: Audiobookshelf
         description: eBooks and Audiobooks
         icon: fas fa-book
         url: http://olympus:13378
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:13378
-        id: 5_569_audiobookshelf
+        id: 4_569_audiobookshelf
       - title: FreshRSS
         description: RSS Reader
         icon: fas fa-rss
         url: http://olympus:49999
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:49999
-        id: 6_569_freshrss
+        id: 5_569_freshrss
       - title: Full-Text RSS
         description: RSS Extractor
         icon: fas fa-rss
         url: http://olympus:50000
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:50000
-        id: 7_569_fulltextrss
+        id: 6_569_fulltextrss
       - title: Pi-hole
         description: Ad blocker
         icon: fas fa-ad
@@ -121,21 +114,35 @@ sections:
         statusCheckUrl: https://192.168.1.231/admin
         statusCheckAllowInsecure: true
         statusCheckAcceptCodes: ''
-        id: 8_569_pihole
+        id: 7_569_pihole
       - title: Paperless-ngx
         description: Document Library
         icon: fas fa-leaf
         url: http://olympus:8010
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:8010
-        id: 9_569_paperlessngx
+        id: 8_569_paperlessngx
       - title: ntfy
         description: Notification Service
         icon: fas fa-bell
         url: http://olympus:8234/
         statusCheck: true
         statusCheckUrl: http://192.168.1.231:8234
-        id: 10_569_ntfy
+        id: 9_569_ntfy
+      - title: AudioMuse-AI
+        description: Music Analysis
+        icon: fas fa-waveform
+        url: http://olympus:8000
+        statusCheck: true
+        statusCheckUrl: http://192.168.1.231:8000
+        id: 10_569_audiomuseai
+      - title: Navidrome
+        description: Music
+        icon: fas fa-music
+        url: http://olympus:4533
+        statusCheck: true
+        statusCheckUrl: http://192.168.1.231:4533
+        id: 11_569_navidrome
   - name: WEBSITES
     icon: fal fa-link
     items:
